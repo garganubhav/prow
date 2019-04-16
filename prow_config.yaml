@@ -1,0 +1,4 @@
+workflows:
+  - app_dir: garganubhav/test/workflows
+    component:prow
+    name: e2e
