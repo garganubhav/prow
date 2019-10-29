@@ -1,0 +1,26 @@
+periodics:
+- name: cluster-unspecified
+  # cluster:
+  interval: 10m
+  decorate: true
+  spec:
+    containers:
+    - image: alpine
+      command: ["/bin/date"]
+- name: cluster-default
+  cluster: default
+  interval: 10m
+  decorate: true
+  spec:
+    containers:
+    - image: alpine
+      command: ["/bin/date"]
+- name: cluster-other
+  cluster: other
+  interval: 10m
+  decorate: true
+  spec:
+    containers:
+    - image: alpine
+      command: ["/bin/date"]cnnnnnnnnnnnn
+cmmmm
